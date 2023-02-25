@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "react/function-component-definition": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
+    "prettier/prettier": "error",
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "no-shadow": "off",
+    "no-unused-vars": "off",
+    "react/destructuring-assignment": "off",
+    "react/no-array-index-key": "off"
+  }
+}
