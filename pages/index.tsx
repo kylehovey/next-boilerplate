@@ -1,16 +1,17 @@
+import { ListItem, UnorderedList } from "@chakra-ui/react";
 import React from "react";
 import Item from "../components/Item";
 
 import data from "../data/data";
 
 const Home: React.FC = () => (
-  <ul>
+  <UnorderedList>
     {data.map((item) => (
-      <li>
+      <ListItem>
         <Item item={item} key={`item-${item.name}`} />
-      </li>
+      </ListItem>
     ))}
-  </ul>
+  </UnorderedList>
 );
 
 export default Home;

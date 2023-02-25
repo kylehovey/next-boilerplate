@@ -1,3 +1,4 @@
+import { HStack, Text } from "@chakra-ui/react";
 import React from "react";
 
 import { Example } from "../data/types";
@@ -7,10 +8,11 @@ interface ItemProps {
 }
 
 const Item: React.FC<ItemProps> = ({ item }) => (
-  <div>
-    <span>{item.name}</span>
-    <span>{item.foo}</span>
-  </div>
+  <HStack>
+    <Text>
+      {item.name}: {item.foo}
+    </Text>
+  </HStack>
 );
 
 export default Item;
