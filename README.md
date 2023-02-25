@@ -21,3 +21,7 @@ To keep code consistently clean as the project evolves, I added a pre-commit hoo
 Lately I've been enjoying [Chakra UI](https://chakra-ui.com/) for building FE UI easily and quickly. It has a bit of a learning curve, but so far I've been impressed with how well their patterns scale in real use cases. I've been using this library in a professional context for a little over half a year at the time of creating this repo and my opinion of Chakra continues to grow more and more positive.
 
 The Chakra setup here is completely standard. There is no custom or bespoke setup to surprise anyone already used to using Chakra.
+
+## When to Not Use This
+
+The landscape of NextJS is constantly evolving, especially with the release of NextJS 13. When the [App Directory](https://beta.nextjs.org/docs/app-directory-roadmap) feature is out of Beta, I can imagine that the structure of Next may be different enough that using `npx create-next-app` would make more sense than using this boilerplate if you are starting a new project.
