@@ -1,34 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Kyle's NextJS Boilerplate
 
-## Getting Started
+Here is (yet another) boilerplate. I'm sure this will change with time, but lately I've been building so many side-projects that it makes sense to get some of my initial setup tracked as an independent repository.
 
-First, run the development server:
+## What is Standard
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+This repository was bootstrapped with `npx create-next-app` (docs [here](https://nextjs.org/docs/api-reference/create-next-app)) using a Typescript template. Pretty much everything was left as-is, so there should be no surprises from the NextJS perspective.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What I Added
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Linting and Formatting
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+I have a few preferred lint rules and formatting setup that I use on all of my projects. I installed [Prettier](https://prettier.io/) and configured it to work in concert with [ESLint](https://eslint.org/). Most of the rules should be familiar to anyone wanting to try this boilerplate, I did change a few rules from the Airbnb standard, and added some rules that help keep code a little more organized.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Pre-Commit Hooks
 
-## Learn More
+To keep code consistently clean as the project evolves, I added a pre-commit hook that will format the code whenever you create a commit. If you need to make a quick commit and bypass this, you can always `git commit --no-verify`, but I don't recommend it.
 
-To learn more about Next.js, take a look at the following resources:
+### Component Library
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Lately I've been enjoying [Chakra UI](https://chakra-ui.com/) for building FE UI easily and quickly. It has a bit of a learning curve, but so far I've been impressed with how well their patterns scale in real use cases. I've been using this library in a professional context for a little over half a year at the time of creating this repo and my opinion of Chakra continues to grow more and more positive.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The Chakra setup here is completely standard. There is no custom or bespoke setup to surprise anyone already used to using Chakra.
