@@ -10,7 +10,10 @@ interface ItemProps {
 const Item: React.FC<ItemProps> = ({ item }) => (
   <HStack>
     <Text>
-      {item.name}: {item.foo}
+      <Text as="span" fontWeight="bold">
+        {item.name}
+      </Text>
+      : {item.foo}
     </Text>
   </HStack>
 );
