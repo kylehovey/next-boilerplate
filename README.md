@@ -12,6 +12,10 @@ This repository was bootstrapped with `npx create-next-app` (docs [here](https:/
 
 I have a few preferred lint rules and formatting setup that I use on all of my projects. I installed [Prettier](https://prettier.io/) and configured it to work in concert with [ESLint](https://eslint.org/). Most of the rules should be familiar to anyone wanting to try this boilerplate, I did change a few rules from the Airbnb standard, and added some rules that help keep code a little more organized.
 
+### Testing
+
+I added [Jest](https://jestjs.io/) for testing individual pieces of logic. I configured it to use [SWC](https://swc.rs/docs/usage/jest) instead of Babel to speed up test runs.
+
 ### Pre-Commit Hooks
 
 To keep code consistently clean as the project evolves, I added a pre-commit hook that will format the code whenever you create a commit. If you need to make a quick commit and bypass this, you can always `git commit --no-verify`, but I don't recommend it.
