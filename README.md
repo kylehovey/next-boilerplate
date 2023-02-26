@@ -26,6 +26,10 @@ Lately I've been enjoying [Chakra UI](https://chakra-ui.com/) for building FE UI
 
 The Chakra setup here is completely standard. There is no custom or bespoke setup to surprise anyone already used to using Chakra.
 
+### State Management
+
+When you need to share state between multiple components, and also dispatch state changes from multiple levels in the tree, the go-to tool in React is [Redux](https://redux.js.org/). While it has more or less solved most common state management issues for React, it is a bit verbose and dealing with types can be tricky. For this reason, I added [Redux Toolkit](https://redux-toolkit.js.org/) to manage Redux. Redux Toolkit is officially supported by the Redux team, so the API is very good and has been around for a while.
+
 ## When to Not Use This
 
 The landscape of NextJS is constantly evolving, especially with the release of NextJS 13. When the [App Directory](https://beta.nextjs.org/docs/app-directory-roadmap) feature is out of Beta, I can imagine that the structure of Next may be different enough that using `npx create-next-app` would make more sense than using this boilerplate if you are starting a new project.
