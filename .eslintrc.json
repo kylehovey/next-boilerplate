@@ -35,6 +35,7 @@
     "react/destructuring-assignment": "off",
     "react/no-array-index-key": "off",
     "prettier/prettier": "error",
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "no-param-reassign": ["error", { "props": false }]
   }
 }
